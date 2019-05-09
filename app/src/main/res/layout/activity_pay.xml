@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/payLayout"
+    tools:context=".PayActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_action_back"
+                android:background="@android:color/transparent"
+                android:onClick="payActivityBack"/>
+            <TextView
+                android:layout_width="85sp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPaysend"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="160sp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/send_qr"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:text="Send                 from                       qr code"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="492dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="4600dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    >
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/search_contact"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+
+                        app:iconifiedByDefault="false"
+                        app:queryHint="Search From Contact">
+                    </android.support.v7.widget.SearchView>
+                    <ListView
+                        android:id="@+id/listView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+
+                        app:iconifiedByDefault="false"
+                        app:queryHint="Search From App">
+                    </android.support.v7.widget.SearchView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lv1"
+                        android:divider="#ad5"
+                        android:dividerHeight="2dp"
+
+                        android:layout_below="@+id/searchView"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:background="@color/colorWhite"
+                        android:ems="10"
+                        android:hint="Amount"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        tools:layout_editor_absoluteX="96dp"
+                        tools:layout_editor_absoluteY="342dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="117dp"
+                        android:layout_height="50dp" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="119dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_button"
+                        android:onClick="sendConfirmed"
+                        android:text="Send"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25dp"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </LinearLayout>
+
+
+</LinearLayout>

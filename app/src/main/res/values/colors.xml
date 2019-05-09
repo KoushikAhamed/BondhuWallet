@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="payactivityBackground">#170d49</color>
+    <color name="payBox">#161d51</color>
+    <color name="smallBox">#2c3368</color>
+    <color name="colorPaysend">#1a0582</color>
+    <color name="colorpaySend1">#2b3172</color>
+    <color name="colorWhite">#f2f6f7</color>
+</resources>
