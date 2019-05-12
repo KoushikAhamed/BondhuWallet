@@ -88,36 +88,59 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.SearchView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="60dp"
                         app:iconifiedByDefault="false"
+                        android:id="@+id/ser_con_con"
                         app:queryHint="Search From Contact">
 
                     </android.support.v7.widget.SearchView>
+                    <ListView
+                        android:id="@+id/list_con_con"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:divider="#ad5"
+                        android:dividerHeight="2dp"
+                        android:layout_below="@+id/ser_con_con"
+                        android:visibility="gone"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"></LinearLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.SearchView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="60dp"
                         app:iconifiedByDefault="false"
-                        app:queryHint="Search From Application"></android.support.v7.widget.SearchView>
-                </LinearLayout>
+                        android:id="@+id/ser_con_app"
+                        app:queryHint="Search From Application">
+                    </android.support.v7.widget.SearchView>
+                    <ListView
+                        android:id="@+id/list_con_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:divider="#ad5"
+                        android:dividerHeight="2dp"
+                        android:layout_below="@+id/ser_con_app"
+                        android:visibility="gone"/>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -141,7 +164,7 @@
                         android:hint="Amount"
                         android:inputType="textPersonName"
                         android:textAlignment="center"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorPrimary"
                         tools:layout_editor_absoluteX="96dp"
                         tools:layout_editor_absoluteY="342dp" />
                 </LinearLayout>

@@ -29,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:src="@drawable/ic_action_back"
                 android:background="@android:color/transparent"
-                android:onClick="payActivityBack"/>
+               android:onClick="payActivityBack"/>
             <TextView
                 android:layout_width="85sp"
                 android:layout_height="match_parent" />
@@ -94,26 +94,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp" />
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:orientation="vertical"
-                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/relativeContact"
                     >
                     <android.support.v7.widget.SearchView
                         android:id="@+id/search_contact"
                         android:layout_width="350dp"
-                        android:layout_height="match_parent"
-
+                        android:layout_height="60dp"
                         app:iconifiedByDefault="false"
                         app:queryHint="Search From Contact">
                     </android.support.v7.widget.SearchView>
                     <ListView
-                        android:id="@+id/listView1"
+                        android:id="@+id/list_contact"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"/>
-                </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:divider="#ad5"
+                        android:dividerHeight="2dp"
+                        android:layout_below="@+id/search_contact"
+                        android:visibility="gone"/>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -121,33 +123,30 @@
 
                 </LinearLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/relative">
                     <android.support.v7.widget.SearchView
                         android:id="@+id/searchView"
                         android:layout_width="350dp"
-                        android:layout_height="match_parent"
-
+                        android:layout_height="60dp"
                         app:iconifiedByDefault="false"
                         app:queryHint="Search From App">
                     </android.support.v7.widget.SearchView>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp">
-
                     <ListView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
                         android:id="@+id/lv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
                         android:divider="#ad5"
                         android:dividerHeight="2dp"
+                        android:layout_below="@+id/searchView"
+                        android:visibility="gone"/>
+                </RelativeLayout>
 
-                        android:layout_below="@+id/searchView"/>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -167,7 +166,7 @@
                         android:hint="Amount"
                         android:inputType="textPersonName"
                         android:textAlignment="center"
-                        android:textColor="@color/colorWhite"
+                        android:textColor="@color/colorPrimary"
                         tools:layout_editor_absoluteX="96dp"
                         tools:layout_editor_absoluteY="342dp" />
                 </LinearLayout>

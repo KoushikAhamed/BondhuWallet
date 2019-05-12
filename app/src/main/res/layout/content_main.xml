@@ -35,7 +35,7 @@
                 android:id="@+id/profile_image"
                 android:layout_width="137dp"
                 android:layout_height="137dp"
-                android:src="@drawable/images"
+                android:src="@drawable/kawshiqe"
                 android:layout_gravity="center"
                 />
             <LinearLayout
@@ -78,7 +78,7 @@
             android:id="@+id/pay"
             android:layout_width="110dp"
             android:layout_height="110dp"
-            android:src="@drawable/pay"
+            android:src="@drawable/image_pay111"
             android:onClick="Pay"
              />
 
@@ -91,7 +91,7 @@
                android:layout_height="110dp"
                android:id="@+id/request"
                android:onClick="requestActivityPressed"
-               android:src="@drawable/request"/>
+               android:src="@drawable/receive"/>
 
     </LinearLayout>
 </LinearLayout>
