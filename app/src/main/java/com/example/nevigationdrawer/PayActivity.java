@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import android.widget.RelativeLayout;
@@ -31,11 +32,12 @@ public class PayActivity extends AppCompatActivity {
     ArrayAdapter<String > adapter;
     ArrayAdapter<String> adapterContact;
 
+    LinearLayout qrLay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
-
+        qrLay = findViewById(R.id.qrlay);
 
         Toolbar toolbar1 = findViewById(R.id.toolbar1);
         setSupportActionBar(toolbar1);
@@ -141,6 +143,9 @@ public class PayActivity extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                    RelativeLayout b = findViewById(R.id.balance);
+                    b.setVisibility(View.GONE);
+                    RelativeLayout r = findViewById(R.id.relative);
 
                     adapter.getFilter().filter(newText);
                     listContact.setVisibility(View.GONE);

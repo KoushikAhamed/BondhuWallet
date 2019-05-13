@@ -61,11 +61,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
-                <TextView
-                    android:layout_width="160sp"
-                    android:layout_height="wrap_content" />
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/qrlay">
+
                 <Button
                     android:id="@+id/send_qr"
                     android:layout_width="130dp"
@@ -73,6 +72,7 @@
                     android:text="Send                 from                       qr code"
                     android:background="@drawable/rounded_button"
                     android:textColor="@color/colorWhite"
+                    android:layout_gravity="center"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -117,11 +117,12 @@
                         android:visibility="gone"/>
                 </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="40dp"
+                    android:id="@+id/balance">
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -180,11 +181,10 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="112dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
 
-                    <TextView
-                        android:layout_width="117dp"
-                        android:layout_height="50dp" />
+
 
                     <Button
                         android:id="@+id/button"
@@ -195,7 +195,7 @@
                         android:text="Send"
                         android:textColor="@color/colorWhite"
                         android:textSize="25dp"
-
+                        android:layout_gravity="center"
                         />
                 </LinearLayout>
             </LinearLayout>
