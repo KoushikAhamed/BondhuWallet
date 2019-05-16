@@ -3,14 +3,47 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/txtName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image_get"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        />
 
-    <TextView
-        android:id="@+id/txtAge"
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"/>
+        android:layout_alignParentLeft="true"
+        android:id="@+id/ddd">
+        <ListView
+            android:id="@+id/amount"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            >
+        </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ddd">
+        <ListView
+            android:id="@+id/con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            ></ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <ListView
+            android:id="@+id/transaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center">
+
+        </ListView>
+    </RelativeLayout>
 </LinearLayout>
