@@ -29,7 +29,7 @@ public class History extends AppCompatActivity {
 //    ArrayList<String> arrayCon;
 //    ArrayList<Integer> arrayImage;
 
-    String[] countries = new String[] {
+    String[] amountExchange = new String[] {
             "500",
             "1000",
             "300",
@@ -44,7 +44,7 @@ public class History extends AppCompatActivity {
     };
 
     // Array of strings to store currencies
-    String[] currency = new String[]{
+    String[] contactNumber = new String[]{
             "01933260024",
             "10723232322",
             "04236289909",
@@ -65,15 +65,15 @@ public class History extends AppCompatActivity {
 
         for(int i=0;i<3;i++){
             HashMap<String, String> hm = new HashMap<String,String>();
-            hm.put("txt", countries[i]);
-            hm.put("cur", currency[i]);
+            hm.put("amount", amountExchange[i]);
+            hm.put("contact", contactNumber[i]);
             hm.put("flag", Integer.toString(flags[i]) );
             aList.add(hm);
         }
-        String[] from = { "flag","txt","cur" };
+        String[] from = { "flag","amount","contact" };
 
         // Ids of views in listview_layout
-        int[] to = { R.id.flag,R.id.txt,R.id.cur};
+        int[] to = { R.id.flag,R.id.amount_exchange,R.id.cotact_number};
 
         // Instantiating an adapter to store each items
         // R.layout.listview_layout defines the layout of each item
