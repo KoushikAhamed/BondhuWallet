@@ -8,14 +8,14 @@
     <TextView
         android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:id="@+id/txt"
+        android:id="@+id/amount_exchange"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textColor="@color/colorPaysend"/>
     <TextView
         android:layout_width="200sp"
         android:layout_height="match_parent"
-        android:id="@+id/cur"
+        android:id="@+id/cotact_number"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textColor="@color/colorPrimaryDark"/>
